@@ -38,3 +38,10 @@ enum AnimationType {
         }
     }
 }
+
+enum TimerType: String {
+   case days = "DAYS"
+    case hours = "HOURS"
+    case minutes = "MINUTES"
+    case seconds = "SECONDS"
+}

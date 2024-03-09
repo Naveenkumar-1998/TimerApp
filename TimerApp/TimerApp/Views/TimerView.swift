@@ -10,7 +10,10 @@ import SwiftUI
 
 struct TimerView: View {
     
-    init(viewModel: TimerViewModel) {
+    var timerType: TimerType
+    
+    init(timerType: TimerType, viewModel: TimerViewModel) {
+        self.timerType = timerType
         self.viewModel = viewModel
     }
 
@@ -34,12 +37,15 @@ struct TimerView: View {
                                       anchor: .top,
                                       perspective: 0.5)
             }
+            TextContent(content: timerType.rawValue,
+                        size: 10)
+            .padding(.top, 20)
         }
             .fixedSize()
     }
 }
 
 #Preview {
-    TimerView(viewModel: TimerViewModel())
+    TimerView(timerType: .days, viewModel: TimerViewModel())
 }
 
