@@ -1,8 +1,8 @@
 //
-//  TimerAppUITests.swift
-//  TimerAppUITests
+//  TimerAppApp.swift
+//  TimerApp
 //
-//  Created by Softasuave on 09/03/24.
+//  Created by Naveen on 09/03/24.
 //
 
 import XCTest

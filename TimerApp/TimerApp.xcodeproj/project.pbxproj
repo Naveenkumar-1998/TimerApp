@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EB549DA82B9C3E9900BFE788 /* TimerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB549DA72B9C3E9900BFE788 /* TimerAppApp.swift */; };
-		EB549DAA2B9C3E9900BFE788 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB549DA92B9C3E9900BFE788 /* ContentView.swift */; };
 		EB549DAC2B9C3E9B00BFE788 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB549DAB2B9C3E9B00BFE788 /* Assets.xcassets */; };
 		EB549DAF2B9C3E9B00BFE788 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB549DAE2B9C3E9B00BFE788 /* Preview Assets.xcassets */; };
 		EB549DB92B9C3E9B00BFE788 /* TimerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB549DB82B9C3E9B00BFE788 /* TimerAppTests.swift */; };
@@ -16,6 +15,11 @@
 		EB549DC52B9C3E9B00BFE788 /* TimerAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB549DC42B9C3E9B00BFE788 /* TimerAppUITestsLaunchTests.swift */; };
 		EB549DD52B9C494B00BFE788 /* DashBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB549DD42B9C494B00BFE788 /* DashBoardView.swift */; };
 		EB549DD72B9C4A0500BFE788 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB549DD62B9C4A0500BFE788 /* TimerView.swift */; };
+		EB549DD92B9C62DA00BFE788 /* DashBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB549DD82B9C62DA00BFE788 /* DashBoardViewModel.swift */; };
+		EB549DDB2B9C6D3700BFE788 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB549DDA2B9C6D3700BFE788 /* TimerViewModel.swift */; };
+		EB549DE02B9C898900BFE788 /* TimerTextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB549DDF2B9C898900BFE788 /* TimerTextModifier.swift */; };
+		EB549DE32B9C89E800BFE788 /* AnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB549DE22B9C89E800BFE788 /* AnimationType.swift */; };
+		EB549DE52B9C8A3900BFE788 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB549DE42B9C8A3900BFE788 /* NumberView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +42,6 @@
 /* Begin PBXFileReference section */
 		EB549DA42B9C3E9900BFE788 /* TimerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB549DA72B9C3E9900BFE788 /* TimerAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerAppApp.swift; sourceTree = "<group>"; };
-		EB549DA92B9C3E9900BFE788 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EB549DAB2B9C3E9B00BFE788 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB549DAE2B9C3E9B00BFE788 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EB549DB42B9C3E9B00BFE788 /* TimerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +51,11 @@
 		EB549DC42B9C3E9B00BFE788 /* TimerAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EB549DD42B9C494B00BFE788 /* DashBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardView.swift; sourceTree = "<group>"; };
 		EB549DD62B9C4A0500BFE788 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		EB549DD82B9C62DA00BFE788 /* DashBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewModel.swift; sourceTree = "<group>"; };
+		EB549DDA2B9C6D3700BFE788 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		EB549DDF2B9C898900BFE788 /* TimerTextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTextModifier.swift; sourceTree = "<group>"; };
+		EB549DE22B9C89E800BFE788 /* AnimationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationType.swift; sourceTree = "<group>"; };
+		EB549DE42B9C8A3900BFE788 /* NumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +110,6 @@
 				EB549DD22B9C47E700BFE788 /* ViewModel */,
 				EB549DD12B9C47DB00BFE788 /* Views */,
 				EB549DA72B9C3E9900BFE788 /* TimerAppApp.swift */,
-				EB549DA92B9C3E9900BFE788 /* ContentView.swift */,
 				EB549DAB2B9C3E9B00BFE788 /* Assets.xcassets */,
 				EB549DAD2B9C3E9B00BFE788 /* Preview Content */,
 			);
@@ -137,8 +144,11 @@
 		EB549DD12B9C47DB00BFE788 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EB549DE12B9C89BD00BFE788 /* ViewEnum */,
+				EB549DDE2B9C894D00BFE788 /* ViewModifiiers */,
 				EB549DD42B9C494B00BFE788 /* DashBoardView.swift */,
 				EB549DD62B9C4A0500BFE788 /* TimerView.swift */,
+				EB549DE42B9C8A3900BFE788 /* NumberView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -146,6 +156,8 @@
 		EB549DD22B9C47E700BFE788 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				EB549DD82B9C62DA00BFE788 /* DashBoardViewModel.swift */,
+				EB549DDA2B9C6D3700BFE788 /* TimerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -155,6 +167,22 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EB549DDE2B9C894D00BFE788 /* ViewModifiiers */ = {
+			isa = PBXGroup;
+			children = (
+				EB549DDF2B9C898900BFE788 /* TimerTextModifier.swift */,
+			);
+			path = ViewModifiiers;
+			sourceTree = "<group>";
+		};
+		EB549DE12B9C89BD00BFE788 /* ViewEnum */ = {
+			isa = PBXGroup;
+			children = (
+				EB549DE22B9C89E800BFE788 /* AnimationType.swift */,
+			);
+			path = ViewEnum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,10 +315,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB549DD92B9C62DA00BFE788 /* DashBoardViewModel.swift in Sources */,
 				EB549DD52B9C494B00BFE788 /* DashBoardView.swift in Sources */,
-				EB549DAA2B9C3E9900BFE788 /* ContentView.swift in Sources */,
 				EB549DD72B9C4A0500BFE788 /* TimerView.swift in Sources */,
+				EB549DE32B9C89E800BFE788 /* AnimationType.swift in Sources */,
+				EB549DDB2B9C6D3700BFE788 /* TimerViewModel.swift in Sources */,
 				EB549DA82B9C3E9900BFE788 /* TimerAppApp.swift in Sources */,
+				EB549DE02B9C898900BFE788 /* TimerTextModifier.swift in Sources */,
+				EB549DE52B9C8A3900BFE788 /* NumberView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

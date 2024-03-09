@@ -1,111 +1,45 @@
+
+//
+//  TimerAppApp.swift
+//  TimerApp
+//
+//  Created by Naveen on 09/03/24.
+//
+
 import SwiftUI
 
 struct TimerView: View {
     
-    private var upCommingTime: String
-    private var currentTime: String
-    
-    init(upCommingTime: String, currentTime: String) {
-        self.upCommingTime = upCommingTime
-        self.currentTime = currentTime
+    init(viewModel: TimerViewModel) {
+        self.viewModel = viewModel
     }
+
+    @ObservedObject var viewModel: TimerViewModel
     
     var body: some View {
         VStack(spacing: 1) {
             ZStack {
-                NumberView(text: upCommingTime, animationType: .top)
-                NumberView(text: currentTime, animationType: .top)
-                    .rotation3DEffect(.init(degrees: true ? -90 : .zero),
+                NumberView(text: viewModel.newValue ?? "", animationType: .top)
+                NumberView(text: viewModel.oldValue ?? "", animationType: .top)
+                    .rotation3DEffect(.init(degrees: self.viewModel.animateTop ? -90 : .zero),
                                       axis: (1, 0, 0),
-                                      anchor: .top,
+                                      anchor: .bottom,
                                       perspective: 0.5)
             }
             ZStack {
-                NumberView(text: upCommingTime, animationType: .bottom)
-                NumberView(text: currentTime, animationType: .bottom)
-                    .rotation3DEffect(.init(degrees: true ? 90 : .zero),
+                NumberView(text: viewModel.oldValue ?? "", animationType: .bottom)
+                NumberView(text: viewModel.newValue ?? "", animationType: .bottom)
+                    .rotation3DEffect(.init(degrees: self.viewModel.animateBottom ? .zero : 90),
                                       axis: (1, 0, 0),
                                       anchor: .top,
                                       perspective: 0.5)
             }
         }
+            .fixedSize()
     }
 }
 
 #Preview {
-    TimerView(upCommingTime: "59", currentTime: "00")
-}
-
-struct NumberView: View {
-    private var text: String
-    private var animationType: AnimationType
-    
-    init(text: String, animationType: AnimationType) {
-        self.text = text
-        self.animationType = animationType
-    }
-    
-    var body: some View {
-        Text(text)
-            .modifier(TimerTextModifier(animationType: animationType))
-    }
-}
-
-struct TimerTextModifier: ViewModifier {
-    
-    private var animationType: AnimationType
-    
-    init(animationType: AnimationType) {
-        self.animationType = animationType
-    }
-    
-    func body(content: Content) -> some View {
-        content
-            .font(.system(size: 40))
-            .fontWeight(.heavy)
-            .foregroundColor(.white)
-            .fixedSize()
-            .padding(animationType.padding, -20)
-            .frame(width: 40, height: 25, alignment: animationType.alignment)
-            .padding(animationType.paddingEdges, 10)
-            .clipped()
-            .background(Color.black)
-            .cornerRadius(4)
-            .padding(animationType.padding, -4.5)
-            .clipped()
-    }
-    
-}
-
-enum AnimationType {
-    case top
-    case bottom
-    
-    var padding: Edge.Set {
-        switch self {
-        case .top:
-            return .bottom
-        case .bottom:
-            return .top
-        }
-    }
-
-    var paddingEdges: Edge.Set {
-        switch self {
-        case .top:
-            return [.top, .leading, .trailing]
-        case .bottom:
-            return [.bottom, .leading, .trailing]
-        }
-    }
-
-    var alignment: Alignment {
-        switch self {
-        case .top:
-            return .bottom
-        case .bottom:
-            return .top
-        }
-    }
+    TimerView(viewModel: TimerViewModel())
 }
 
