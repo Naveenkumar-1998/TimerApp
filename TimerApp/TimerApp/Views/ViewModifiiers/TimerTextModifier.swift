@@ -26,7 +26,7 @@ struct TimerTextModifier: ViewModifier {
             .padding(animationType.paddingEdges, 10)
             .clipped()
             .background(Color("timerBackGroundColor"))
-            .cornerRadius(4)
+            .cornerRadius(15)
             .padding(animationType.padding, -4.5)
             .clipped()
     }

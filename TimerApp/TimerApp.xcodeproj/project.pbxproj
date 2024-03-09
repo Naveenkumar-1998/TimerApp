@@ -20,6 +20,10 @@
 		EB549DE02B9C898900BFE788 /* TimerTextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB549DDF2B9C898900BFE788 /* TimerTextModifier.swift */; };
 		EB549DE32B9C89E800BFE788 /* AnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB549DE22B9C89E800BFE788 /* AnimationType.swift */; };
 		EB549DE52B9C8A3900BFE788 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB549DE42B9C8A3900BFE788 /* NumberView.swift */; };
+		EB549DE72B9CA1CA00BFE788 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB549DE62B9CA1CA00BFE788 /* CustomView.swift */; };
+		EB549DEC2B9CA77800BFE788 /* DashBoardTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB549DEB2B9CA77800BFE788 /* DashBoardTimerView.swift */; };
+		EB549DEE2B9CA7BB00BFE788 /* IntroText.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB549DED2B9CA7BB00BFE788 /* IntroText.swift */; };
+		EB549DF02B9CA80200BFE788 /* SocialMediaInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB549DEF2B9CA80200BFE788 /* SocialMediaInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,10 @@
 		EB549DDF2B9C898900BFE788 /* TimerTextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTextModifier.swift; sourceTree = "<group>"; };
 		EB549DE22B9C89E800BFE788 /* AnimationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationType.swift; sourceTree = "<group>"; };
 		EB549DE42B9C8A3900BFE788 /* NumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
+		EB549DE62B9CA1CA00BFE788 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		EB549DEB2B9CA77800BFE788 /* DashBoardTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardTimerView.swift; sourceTree = "<group>"; };
+		EB549DED2B9CA7BB00BFE788 /* IntroText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroText.swift; sourceTree = "<group>"; };
+		EB549DEF2B9CA80200BFE788 /* SocialMediaInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,11 +152,10 @@
 		EB549DD12B9C47DB00BFE788 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EB549DE92B9CA24200BFE788 /* DashBoardView */,
+				EB549DE82B9CA1D400BFE788 /* CustomView */,
 				EB549DE12B9C89BD00BFE788 /* ViewEnum */,
 				EB549DDE2B9C894D00BFE788 /* ViewModifiiers */,
-				EB549DD42B9C494B00BFE788 /* DashBoardView.swift */,
-				EB549DD62B9C4A0500BFE788 /* TimerView.swift */,
-				EB549DE42B9C8A3900BFE788 /* NumberView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,6 +190,35 @@
 				EB549DE22B9C89E800BFE788 /* AnimationType.swift */,
 			);
 			path = ViewEnum;
+			sourceTree = "<group>";
+		};
+		EB549DE82B9CA1D400BFE788 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				EB549DE62B9CA1CA00BFE788 /* CustomView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		EB549DE92B9CA24200BFE788 /* DashBoardView */ = {
+			isa = PBXGroup;
+			children = (
+				EB549DEA2B9CA27700BFE788 /* DashBoardChildView */,
+				EB549DD42B9C494B00BFE788 /* DashBoardView.swift */,
+			);
+			path = DashBoardView;
+			sourceTree = "<group>";
+		};
+		EB549DEA2B9CA27700BFE788 /* DashBoardChildView */ = {
+			isa = PBXGroup;
+			children = (
+				EB549DE42B9C8A3900BFE788 /* NumberView.swift */,
+				EB549DD62B9C4A0500BFE788 /* TimerView.swift */,
+				EB549DEB2B9CA77800BFE788 /* DashBoardTimerView.swift */,
+				EB549DED2B9CA7BB00BFE788 /* IntroText.swift */,
+				EB549DEF2B9CA80200BFE788 /* SocialMediaInfoView.swift */,
+			);
+			path = DashBoardChildView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +354,10 @@
 				EB549DD92B9C62DA00BFE788 /* DashBoardViewModel.swift in Sources */,
 				EB549DD52B9C494B00BFE788 /* DashBoardView.swift in Sources */,
 				EB549DD72B9C4A0500BFE788 /* TimerView.swift in Sources */,
+				EB549DEC2B9CA77800BFE788 /* DashBoardTimerView.swift in Sources */,
+				EB549DE72B9CA1CA00BFE788 /* CustomView.swift in Sources */,
+				EB549DEE2B9CA7BB00BFE788 /* IntroText.swift in Sources */,
+				EB549DF02B9CA80200BFE788 /* SocialMediaInfoView.swift in Sources */,
 				EB549DE32B9C89E800BFE788 /* AnimationType.swift in Sources */,
 				EB549DDB2B9C6D3700BFE788 /* TimerViewModel.swift in Sources */,
 				EB549DA82B9C3E9900BFE788 /* TimerAppApp.swift in Sources */,
