@@ -12,7 +12,7 @@ struct DashBoardView: View {
 
     var body: some View {
         ZStack {
-            ImageView(imageName: "backGroundImage")
+            ImageView(imageName: mountImage)
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 IntroText()
@@ -21,7 +21,6 @@ struct DashBoardView: View {
                 SocialMediaInfoView()
             }
         }
-        
     }
 }
 

@@ -8,29 +8,60 @@
 import XCTest
 @testable import TimerApp
 
-final class TimerAppTests: XCTestCase {
+class DashBoardViewModelTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    var dashboardViewModel: DashBoardViewModel!
+
+    override func setUp() {
+        super.setUp()
+        dashboardViewModel = DashBoardViewModel()
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    override func tearDown() {
+        dashboardViewModel = nil
+        super.tearDown()
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testFlipViewModelsCount() {
+        XCTAssertEqual(dashboardViewModel.flipViewModels.count, 4, "Flip view models count should be 4")
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testUpdateTimeComponents() {
+        dashboardViewModel.updateTimeComponents()
+        if let text = dashboardViewModel.flipViewModels[0].text {
+            XCTAssertEqual(text, "04", "Remaining days should be 04")
         }
     }
+}
 
+class TimerViewModelTest: XCTestCase {
+    
+    var timerViewModel: TimerViewModel!
+    
+    override func setUp() {
+        super.setUp()
+        timerViewModel = TimerViewModel()
+    }
+    
+    override func tearDown() {
+        timerViewModel = nil
+        super.tearDown()
+    }
+    
+    func testUpdateTexts() {
+            // Set up initial values
+            timerViewModel.text = "10"
+            timerViewModel.oldValue = "9"
+        
+            // Verify that animations are triggered
+            XCTAssertTrue(timerViewModel.animateTop,
+                          "animateTop should be true after updating text")
+            XCTAssertTrue(timerViewModel.animateBottom,
+                          "animateBottom should be true after updating text")
+            // Verify new and old value are not equal
+            XCTAssertNotEqual(timerViewModel.newValue,
+                              timerViewModel.oldValue)
+        
+        }
+    
 }

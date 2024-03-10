@@ -21,3 +21,7 @@ struct NumberView: View {
             .modifier(TimerTextModifier(animationType: animationType))
     }
 }
+
+#Preview {
+    NumberView(text: "10", animationType: .top)
+}

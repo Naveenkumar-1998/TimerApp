@@ -9,8 +9,8 @@ import SwiftUI
 
 class TimerViewModel: ObservableObject {
 
-    var text: String? {
-        didSet { updateTexts(old: oldValue, new: text) }
+    var updatedTime: String? {
+        didSet { updateTexts(old: oldValue, new: updatedTime) }
     }
 
     @Published var newValue: String?
@@ -18,7 +18,11 @@ class TimerViewModel: ObservableObject {
 
     @Published var animateTop: Bool = false
     @Published var animateBottom: Bool = false
-
+    
+    /// Method to set old and new timer while update text properties.
+    /// - Parameters:
+    ///   - old: keeps old view for animation
+    ///   - new: from updatedTime property
     func updateTexts(old: String?, new: String?) {
         guard old != new else { return }
         oldValue = old

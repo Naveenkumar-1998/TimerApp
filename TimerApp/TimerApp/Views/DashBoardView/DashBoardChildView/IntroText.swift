@@ -2,7 +2,7 @@
 //  IntroText.swift
 //  TimerApp
 //
-//  Created by Softasuave on 09/03/24.
+//  Created by Naveen on 09/03/24.
 //
 
 import SwiftUI
@@ -10,11 +10,15 @@ import SwiftUI
 struct IntroText: View {
     var body: some View {
         VStack{
-            TextContent(content: "W E ' R E  L A U N C H I N G ")
-            TextContent(content: "S O O N")
+            TextContent(content: launchingText)
+            TextContent(content: soonText)
         }
         .padding(.top, 200)
         .padding(.bottom, 50)
     }
+}
+
+#Preview {
+    IntroText()
 }
 

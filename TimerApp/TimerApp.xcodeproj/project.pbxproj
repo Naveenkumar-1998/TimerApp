@@ -24,6 +24,11 @@
 		EB549DEC2B9CA77800BFE788 /* DashBoardTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB549DEB2B9CA77800BFE788 /* DashBoardTimerView.swift */; };
 		EB549DEE2B9CA7BB00BFE788 /* IntroText.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB549DED2B9CA7BB00BFE788 /* IntroText.swift */; };
 		EB549DF02B9CA80200BFE788 /* SocialMediaInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB549DEF2B9CA80200BFE788 /* SocialMediaInfoView.swift */; };
+		EB549DF12B9CE44A00BFE788 /* DashBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB549DD82B9C62DA00BFE788 /* DashBoardViewModel.swift */; };
+		EB549DF32B9CE45600BFE788 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB549DDA2B9C6D3700BFE788 /* TimerViewModel.swift */; };
+		EB549DFA2B9CEB2C00BFE788 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB549DF92B9CEB2C00BFE788 /* Constant.swift */; };
+		EB549DFC2B9CEF1C00BFE788 /* TimerAnimationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB549DFB2B9CEF1C00BFE788 /* TimerAnimationModifier.swift */; };
+		EB549DFE2B9CF6A200BFE788 /* TimerAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB549DFD2B9CF6A200BFE788 /* TimerAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +69,9 @@
 		EB549DEB2B9CA77800BFE788 /* DashBoardTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardTimerView.swift; sourceTree = "<group>"; };
 		EB549DED2B9CA7BB00BFE788 /* IntroText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroText.swift; sourceTree = "<group>"; };
 		EB549DEF2B9CA80200BFE788 /* SocialMediaInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaInfoView.swift; sourceTree = "<group>"; };
+		EB549DF92B9CEB2C00BFE788 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		EB549DFB2B9CEF1C00BFE788 /* TimerAnimationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerAnimationModifier.swift; sourceTree = "<group>"; };
+		EB549DFD2B9CF6A200BFE788 /* TimerAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +122,7 @@
 		EB549DA62B9C3E9900BFE788 /* TimerApp */ = {
 			isa = PBXGroup;
 			children = (
+				EB549DF72B9CEAF500BFE788 /* Helplers */,
 				EB549DD32B9C47F800BFE788 /* Model */,
 				EB549DD22B9C47E700BFE788 /* ViewModel */,
 				EB549DD12B9C47DB00BFE788 /* Views */,
@@ -180,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				EB549DDF2B9C898900BFE788 /* TimerTextModifier.swift */,
+				EB549DFB2B9CEF1C00BFE788 /* TimerAnimationModifier.swift */,
 			);
 			path = ViewModifiiers;
 			sourceTree = "<group>";
@@ -217,8 +227,25 @@
 				EB549DEB2B9CA77800BFE788 /* DashBoardTimerView.swift */,
 				EB549DED2B9CA7BB00BFE788 /* IntroText.swift */,
 				EB549DEF2B9CA80200BFE788 /* SocialMediaInfoView.swift */,
+				EB549DFD2B9CF6A200BFE788 /* TimerAnimationView.swift */,
 			);
 			path = DashBoardChildView;
+			sourceTree = "<group>";
+		};
+		EB549DF72B9CEAF500BFE788 /* Helplers */ = {
+			isa = PBXGroup;
+			children = (
+				EB549DF82B9CEB1000BFE788 /* Enums */,
+			);
+			path = Helplers;
+			sourceTree = "<group>";
+		};
+		EB549DF82B9CEB1000BFE788 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				EB549DF92B9CEB2C00BFE788 /* Constant.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,9 +387,12 @@
 				EB549DF02B9CA80200BFE788 /* SocialMediaInfoView.swift in Sources */,
 				EB549DE32B9C89E800BFE788 /* AnimationType.swift in Sources */,
 				EB549DDB2B9C6D3700BFE788 /* TimerViewModel.swift in Sources */,
+				EB549DFA2B9CEB2C00BFE788 /* Constant.swift in Sources */,
 				EB549DA82B9C3E9900BFE788 /* TimerAppApp.swift in Sources */,
 				EB549DE02B9C898900BFE788 /* TimerTextModifier.swift in Sources */,
 				EB549DE52B9C8A3900BFE788 /* NumberView.swift in Sources */,
+				EB549DFC2B9CEF1C00BFE788 /* TimerAnimationModifier.swift in Sources */,
+				EB549DFE2B9CF6A200BFE788 /* TimerAnimationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +401,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB549DB92B9C3E9B00BFE788 /* TimerAppTests.swift in Sources */,
+				EB549DF32B9CE45600BFE788 /* TimerViewModel.swift in Sources */,
+				EB549DF12B9CE44A00BFE788 /* DashBoardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

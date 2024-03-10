@@ -19,6 +19,7 @@ class DashBoardViewModel: ObservableObject {
     var targetDate: Date = Calendar.current.date(byAdding: .day, value: 5, to: Date())!
     var timer: Timer?
     
+    /// Method to start the timer.
     func startTimer() {
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
             self?.updateTimeComponents()
@@ -26,12 +27,14 @@ class DashBoardViewModel: ObservableObject {
         RunLoop.current.add(timer!, forMode: .common)
     }
     
+    /// Method to stop the current running timer.
     func stopTimer() {
         timer?.invalidate()
         timer = nil
     }
     
-    private func updateTimeComponents() {
+    /// Method to update the day, hour, minutes and seconds values.
+    func updateTimeComponents() {
         let currentDate = Date()
         let calendar = Calendar.current
         
@@ -44,10 +47,10 @@ class DashBoardViewModel: ObservableObject {
             return
         }
         
-        flipViewModels[0].text = String(format: "%02d", remainingDays)
-        flipViewModels[1].text = String(format: "%02d", remainingHours)
-        flipViewModels[2].text = String(format: "%02d", remainingMinutes)
-        flipViewModels[3].text = String(format: "%02d", remainingSeconds)
+        flipViewModels[0].updatedTime = String(format: "%02d", remainingDays)
+        flipViewModels[1].updatedTime = String(format: "%02d", remainingHours)
+        flipViewModels[2].updatedTime = String(format: "%02d", remainingMinutes)
+        flipViewModels[3].updatedTime = String(format: "%02d", remainingSeconds)
         
         if currentDate >= targetDate {
             stopTimer()
