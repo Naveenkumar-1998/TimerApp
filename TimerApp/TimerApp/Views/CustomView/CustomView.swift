@@ -28,14 +28,3 @@ struct TextContent: View {
             .fixedSize()
     }
 }
-
-struct TimerTextContent: View {
-    var content: String
-    var body: some View {
-        Text(content)
-            .font(.system(size: 20))
-            .fontWeight(.heavy)
-            .foregroundColor(.white)
-            .fixedSize()
-    }
-}
